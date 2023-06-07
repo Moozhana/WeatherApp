@@ -56,6 +56,6 @@ function getCurrentLocation(event) {
 }
 
 let current = document.querySelector("#button-current");
-current.addEventListener("click", getCurrentLocation);
+current.addEventListener("submit", getCurrentLocation);
 
 searchCity(paris);
