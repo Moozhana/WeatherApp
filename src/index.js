@@ -45,9 +45,9 @@ search.addEventListener("submit", handleSubmit);
 function searchLocation(position) {
   let latitude = position.coords.latitude;
   let longitude = position.coords.longitude;
-  let apiKey2 = "ed55b36e362d8733f7d859247cedeaf2";
-  let apiUrl2 = `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${apiKey2}&units=metric`;
-  axios.get(apiUrl2).then(showWeather);
+  let apiKey = "ed55b36e362d8733f7d859247cedeaf2";
+  let apiUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${apiKey}&units=metric`;
+  axios.get(apiUrl).then(showWeather);
 }
 
 function getCurrentLocation(event) {
