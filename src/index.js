@@ -55,7 +55,7 @@ function getCurrentLocation(event) {
   navigator.geolocation.getCurrentPosition(searchLocation);
 }
 
-let current = document.querySelector("#button-current");
+let current = document.querySelector(".current");
 current.addEventListener("submit", getCurrentLocation);
 
 searchCity(paris);
