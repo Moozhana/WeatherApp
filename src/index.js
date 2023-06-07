@@ -65,4 +65,4 @@ function getCurrentLocation(event) {
 }
 
 let current = document.querySelector(".current");
-current.addEventListener("submit", getCurrentLocation);
+current.addEventListener("click", getCurrentLocation);
