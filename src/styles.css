@@ -1,0 +1,108 @@
+body {
+  background-color: rgb(248, 229, 118);
+}
+form {
+  display: block;
+  margin-top: 30px;
+  margin-left: 250px;
+}
+.text {
+  border-radius: 7px;
+  padding: 1px, 10px;
+  background: aquamarine;
+  font-size: 28px;
+}
+.search {
+  border-radius: 7px;
+  padding: px, 10px;
+  padding-right: 0;
+  background-color: darkorange;
+  font-size: 28px;
+  text-align: center;
+}
+.current {
+  border-radius: 7px;
+  padding: 4px, 10px;
+  padding-right: 0;
+  background-color: blue;
+  font-size: 28px;
+  text-align: center;
+}
+.WeekDays {
+  font-size: 30px;
+  position: relative;
+  right: 100px;
+  top: 40px;
+}
+.city {
+  position: relative;
+  top: 40px;
+  text-align: center;
+}
+.Fri {
+  margin-bottom: 40px;
+}
+.Sat {
+  margin-bottom: 40px;
+}
+.Sun {
+  margin-bottom: 40px;
+}
+.Mon {
+  margin-bottom: 40px;
+}
+.Tue {
+  margin-bottom: 40px;
+}
+.fa-cloud-rain {
+  color: blue;
+  font-size: 50px;
+}
+.fa-sun {
+  color: orange;
+  font-size: 50px;
+}
+.fa-cloud {
+  color: blue;
+  font-size: 40px;
+}
+h1 {
+  font-size: 50px;
+}
+.h2 {
+  position: relative;
+  top: 60px;
+  font-size: 60px;
+}
+
+.centi {
+  position: relative;
+  top: 37px;
+  font-size: 25px;
+  text-decoration: none;
+  cursor: pointer;
+}
+.centi:hover {
+  text-decoration: underline;
+  color: blue;
+}
+h3 {
+  position: relative;
+  top: 60px;
+}
+.precip {
+  position: relative;
+  top: 120px;
+  font-weight: bold;
+}
+.wind {
+  position: relative;
+  top: 120px;
+  font-weight: bold;
+}
+.second {
+  font-size: 200px;
+  color: blue;
+  position: relative;
+  top: 40px;
+}
