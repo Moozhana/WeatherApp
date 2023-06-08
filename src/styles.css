@@ -109,7 +109,7 @@ h3 {
 .gitLink {
   font-size: 90%;
   margin-right: -170px;
-  margin-top: 80px;
+  margin-top: -80px;
   margin-bottom: 0;
 }
 a {
