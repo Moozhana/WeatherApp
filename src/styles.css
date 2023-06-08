@@ -106,3 +106,7 @@ h3 {
   position: relative;
   top: 40px;
 }
+.gitLink {
+  text-align: center;
+  margin-bottom: 5px;
+}
