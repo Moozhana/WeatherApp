@@ -110,7 +110,7 @@ h3 {
   position: absolute;
   right: 103px;
   font-size: 90%;
-  bottom: 0;
+  top: -150px;
 }
 a {
   text-decoration: none;
