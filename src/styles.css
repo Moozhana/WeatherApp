@@ -112,8 +112,10 @@ h3 {
 }
 a {
   text-decoration: none;
+  transition: 200ms, all, ease-in-out;
 }
 a:hover {
   cursor: pointer;
   color: blue;
+  text-decoration: underline;
 }
