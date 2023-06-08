@@ -108,8 +108,7 @@ h3 {
 }
 .gitLink {
   position: relative;
-  bottom: 0;
-  left: 0;
+  right: 100px;
 }
 a {
   text-decoration: none;
