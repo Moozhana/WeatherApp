@@ -108,5 +108,9 @@ h3 {
 }
 .gitLink {
   text-align: center;
-  margin-bottom: 5px;
+  margin-bottom: 2px;
+}
+a {
+  text-decoration: none;
+  cursor: pointer;
 }
