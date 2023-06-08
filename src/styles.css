@@ -51,7 +51,9 @@ form {
 .Mon {
   margin-bottom: 40px;
 }
-
+.Tue {
+  margin-bottom: 80px;
+}
 .fa-cloud-rain {
   color: blue;
   font-size: 50px;
@@ -106,7 +108,8 @@ h3 {
 }
 .gitLink {
   font-size: 90%;
-  margin-right: 170px;
+  margin-right: -170px;
+  margin-top: 80px;
 }
 a {
   text-decoration: none;
