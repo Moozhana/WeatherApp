@@ -1,19 +1,20 @@
-let currentTime = new Date();
-
-let hours = currentTime.getHours();
-let minutes = currentTime.getMinutes();
-let days = [
-  "Sunday",
-  "Monday",
-  "Tuesday",
-  "Wednesday",
-  "Thursday",
-  "Friday",
-  "Saturday",
-];
-let day = days[currentTime.getDay()];
-let header4 = document.querySelector("h4");
-header4.innerHTML = `${day} ${hours}:${minutes}`;
+function formatDate() {
+  let Time = new Date();
+  let hours = Time.getHours();
+  let minutes = Time.getMinutes();
+  let days = [
+    "Sunday",
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday",
+    "Saturday",
+  ];
+  let day = days[Time.getDay()];
+  let header4 = document.querySelector("h4");
+  header4.innerHTML = `${day} ${hours}:${minutes}`;
+}
 
 function showWeather(response) {
   let header1 = document.querySelector("h1");
@@ -26,8 +27,7 @@ function showWeather(response) {
   let wind = document.querySelector("#speed");
   wind.innerHTML = Math.round(response.data.wind.speed);
   let date = document.querySelector("h4");
-  date.innerHTML = farmatDate(response.data.Date * 1000);
-  console.log(response.data.Date * 1000);
+  date.innerHTML = formatDate(response.data.dt * 1000);
 }
 
 function searchCity(city) {
