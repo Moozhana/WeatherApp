@@ -74,6 +74,9 @@ form {
 h1 {
   font-size: 50px;
 }
+.time {
+  font-weight: bold;
+}
 .h2 {
   position: relative;
   top: 60px;
