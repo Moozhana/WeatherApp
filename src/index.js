@@ -28,6 +28,10 @@ function showWeather(response) {
   let date = document.querySelector(".date");
   date.innerHTML = formatDate(response.data.dt * 1000);
   let icon = document.querySelector("#icon");
+  icon.setAttribute(
+    "src",
+    `https://openweathermap.org/img/wn/${response.data.weather.icon}@2x.png`
+  );
 }
 
 function searchCity(city) {
