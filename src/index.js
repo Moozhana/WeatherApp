@@ -25,10 +25,12 @@ function showWeather(response) {
   humidity.innerHTML = response.data.main.humidity;
   let wind = document.querySelector("#speed");
   wind.innerHTML = Math.round(response.data.wind.speed);
-  let date = document.querySelector("h4");
+  let date = document.querySelector(".date");
   date.innerHTML = formatDate(response.data.dt * 1000);
-  let logo = document.querySelector(".logo");
-  console.log(response.data);
+  let icon = document.querySelector(".icon");
+  icon.attributes(
+    `https://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
+  );
 }
 
 function searchCity(city) {
