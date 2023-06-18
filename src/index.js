@@ -27,6 +27,8 @@ function showWeather(response) {
   wind.innerHTML = Math.round(response.data.wind.speed);
   let date = document.querySelector("h4");
   date.innerHTML = formatDate(response.data.dt * 1000);
+  let logo = document.querySelector(".logo");
+  console.log(response.data);
 }
 
 function searchCity(city) {
