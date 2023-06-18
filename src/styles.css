@@ -12,6 +12,7 @@
 
 form {
   display: block;
+  margin-top: 2px;
 }
 .text {
   border-radius: 7px;
