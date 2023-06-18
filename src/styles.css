@@ -73,6 +73,8 @@ form {
 }
 h1 {
   font-size: 50px;
+  position: relative;
+  left: 0;
 }
 .time {
   font-weight: bold;
@@ -94,7 +96,8 @@ h1 {
 }
 .precip {
   font-weight: bold;
-  margin-top: 10px;
+  position: relative;
+  bottom: 0;
 }
 .wind {
   font-weight: bold;
