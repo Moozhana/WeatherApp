@@ -94,9 +94,11 @@ h1 {
 }
 .precip {
   font-weight: bold;
+  margin-top: 10px;
 }
 .wind {
   font-weight: bold;
+  margin-top: 12px;
 }
 .second {
   font-size: 200px;
