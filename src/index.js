@@ -1,5 +1,5 @@
-function formatDate() {
-  let Time = new Date();
+function formatDate(timestamp) {
+  let Time = new Date(timestamp);
   let hours = Time.getHours();
   let minutes = Time.getMinutes();
   let days = [
