@@ -27,10 +27,7 @@ function showWeather(response) {
   wind.innerHTML = Math.round(response.data.wind.speed);
   let date = document.querySelector(".date");
   date.innerHTML = formatDate(response.data.dt * 1000);
-  let icon = document.querySelector(".icon");
-  icon.attributes(
-    `https://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
-  );
+  let icon = document.querySelector("#icon");
 }
 
 function searchCity(city) {
