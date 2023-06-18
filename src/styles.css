@@ -1,6 +1,9 @@
 body {
   background-color: rgb(248, 229, 118);
 }
+.app {
+  max-width: 100px;
+}
 
 form {
   display: block;
