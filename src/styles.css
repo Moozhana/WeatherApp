@@ -40,6 +40,10 @@ form {
   top: 40px;
   text-align: center;
 }
+.icon {
+  position: relative;
+  top: 40px;
+}
 .Fri {
   margin-bottom: 40px;
 }
