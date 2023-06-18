@@ -96,8 +96,6 @@ h1 {
 }
 .precip {
   font-weight: bold;
-  position: relative;
-  bottom: 0;
 }
 .wind {
   font-weight: bold;
