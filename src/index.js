@@ -12,8 +12,7 @@ function formatDate(timestamp) {
     "Saturday",
   ];
   let day = days[Time.getDay()];
-  let date = document.querySelector("h4");
-  date.innerHTML = `${day} ${hours}:${minutes}`;
+  return `${day} ${hours}:${minutes}`;
 }
 
 function showWeather(response) {
