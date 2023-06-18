@@ -81,13 +81,9 @@ h1 {
   font-weight: bold;
 }
 .h2 {
-  position: relative;
-  top: 60px;
   font-size: 60px;
 }
 .centi {
-  position: relative;
-  top: 37px;
   font-size: 25px;
   text-decoration: none;
   cursor: pointer;
@@ -96,18 +92,10 @@ h1 {
   text-decoration: underline;
   color: blue;
 }
-h3 {
-  position: relative;
-  top: 60px;
-}
 .precip {
-  position: relative;
-  top: 120px;
   font-weight: bold;
 }
 .wind {
-  position: relative;
-  top: 120px;
   font-weight: bold;
 }
 .second {
@@ -118,7 +106,6 @@ h3 {
 }
 .gitLink {
   font-size: 14px;
-  margin-bottom: 1px;
 }
 a {
   text-decoration: none;
