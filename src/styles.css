@@ -76,9 +76,11 @@ h1 {
 }
 .time {
   font-weight: bold;
+  font-size: 28px;
 }
 .description {
   font-weight: bold;
+  font-size: larger;
 }
 .h2 {
   position: relative;
