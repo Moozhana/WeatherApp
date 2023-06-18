@@ -1,6 +1,9 @@
 .app {
   background-color: rgb(248, 229, 118);
 }
+.webPage {
+  text-align: center;
+}
 
 form {
   display: block;
