@@ -25,6 +25,9 @@ function showWeather(response) {
   humidity.innerHTML = response.data.main.humidity;
   let wind = document.querySelector("#speed");
   wind.innerHTML = Math.round(response.data.wind.speed);
+  let date = document.querySelector("h4");
+  date.innerHTML = farmatDate(response.data.Date * 1000);
+  console.log(response.data.Date * 1000);
 }
 
 function searchCity(city) {
