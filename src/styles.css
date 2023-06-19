@@ -19,6 +19,7 @@
 }
 .search {
   background-color: darkorange;
+  border-color: darkorange;
 }
 .current {
   background-color: blue;
