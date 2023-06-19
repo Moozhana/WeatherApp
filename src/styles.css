@@ -21,6 +21,10 @@
   background-color: darkorange;
   border-color: darkorange;
 }
+.search:hover {
+  background-color: darkorange;
+  border-color: darkorange;
+}
 .current {
   background-color: blue;
 }
