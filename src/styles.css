@@ -10,11 +10,11 @@
   margin: 30px auto;
 }
 
-form {
+.mb-3 {
   display: block;
   margin-top: 2px;
 }
-.text {
+.form-control {
   border-radius: 7px;
   padding: 0.5px, 10px;
   background: aquamarine;
