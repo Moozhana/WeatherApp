@@ -83,8 +83,7 @@ h1 {
   font-size: 15px;
   text-decoration: none;
   cursor: pointer;
-  position: relative;
-  top: 5px;
+  margin-top: 2px;
 }
 .centi:hover {
   text-decoration: none;
@@ -94,10 +93,14 @@ h1 {
   font-size: 15px;
   text-decoration: none;
   cursor: pointer;
+  margin-top: 2px;
 }
 .fahren:hover {
   text-decoration: none;
   color: blue;
+}
+.line {
+  margin-top: 2px;
 }
 .precip {
   font-weight: 100px;
