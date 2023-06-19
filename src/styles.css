@@ -70,6 +70,7 @@ h1 {
 }
 .time {
   font-weight: bold;
+  margin-top: 3px;
 }
 .description {
   font-weight: bold;
@@ -88,7 +89,7 @@ h1 {
 }
 .precip {
   font-weight: 100px;
-  margin-top: 12px;
+  margin-top: 15px;
 }
 .wind {
   font-weight: 100px;
