@@ -83,6 +83,8 @@ h1 {
   font-size: 15px;
   text-decoration: none;
   cursor: pointer;
+  position: relative;
+  top: 10px;
 }
 .centi:hover {
   text-decoration: none;
@@ -92,6 +94,8 @@ h1 {
   font-size: 15px;
   text-decoration: none;
   cursor: pointer;
+  position: relative;
+  top: 10px;
 }
 .fahren:hover {
   text-decoration: none;
