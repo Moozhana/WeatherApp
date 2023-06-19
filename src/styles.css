@@ -15,26 +15,13 @@
   margin-top: 2px;
 }
 .form-control {
-  border-radius: 7px;
-  padding: 0.5px, 10px;
   background: aquamarine;
-  font-size: 28px;
 }
 .search {
-  border-radius: 7px;
-  padding: 0.5px, 10px;
-  padding-right: 0;
   background-color: darkorange;
-  font-size: 28px;
-  text-align: center;
 }
 .current {
-  border-radius: 7px;
-  padding: 4px, 10px;
-  padding-right: 0;
   background-color: blue;
-  font-size: 28px;
-  text-align: center;
 }
 
 .city {
