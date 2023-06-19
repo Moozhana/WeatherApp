@@ -70,7 +70,8 @@ current.addEventListener("click", getCurrentLocation);
 
 function displayTempFahren() {
   let temperature = document.querySelector("#temp");
-  temperature.innerHTML = (tempCelsius * 9) / 5 + 32;
+  let tempFahren = (tempCelsius * 9) / 5 + 32;
+  temperature.innerHTML = Math.round(tempFahren);
 }
 
 let tempCelsius = null;
