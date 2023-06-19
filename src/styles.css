@@ -99,8 +99,9 @@ h1 {
   text-decoration: none;
   color: blue;
 }
-.line {
-  margin-top: 2px;
+.units {
+  position: relative;
+  top: -34px;
 }
 .precip {
   font-weight: 100px;
