@@ -20,12 +20,21 @@
   </head>
   <body>
     <div class="container">
-      <div class="webPage">
-        <div class="app">
-          <form class="form">
-            <input type="text" placeholder="Search city name..." class="text" />
-            <button class="search">Search</button>
-            <button class="current" id="button-current">Current</button>
+      <div class="weather-app-wrapper">
+        <div class="weather-app">
+          <form id="search-form" class="mb-3">
+            <input
+              type="text"
+              placeholder="Search city name..."
+              class="form-control"
+              id="text"
+            />
+            <button type="submit" class="btn btn-primary" id="search">
+              Search
+            </button>
+            <button type="submit" class="btn btn-primary" id="current">
+              Current
+            </button>
           </form>
           <div class="row">
             <div class="col-6 city">

@@ -1,11 +1,11 @@
-.app {
+.weather-app {
   background-color: rgb(248, 229, 118);
   padding: 20px;
   border: 1px solid #dadde1;
   border-radius: 5px;
 }
 
-.webPage {
+.weather-app-wrapper {
   max-width: 600px;
   margin: 30px auto;
 }

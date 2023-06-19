@@ -46,10 +46,10 @@ function searchCity(city) {
 
 function handleSubmit(event) {
   event.preventDefault();
-  let city = document.querySelector(".text").value;
+  let city = document.querySelector("#text").value;
   searchCity(city);
 }
-let search = document.querySelector(".form");
+let search = document.querySelector("#search-form");
 search.addEventListener("submit", handleSubmit);
 
 function searchLocation(position) {
@@ -65,7 +65,7 @@ function getCurrentLocation(event) {
   navigator.geolocation.getCurrentPosition(searchLocation);
 }
 
-let current = document.querySelector("#button-current");
+let current = document.querySelector("#current");
 current.addEventListener("click", getCurrentLocation);
 
 searchCity("Tehran");
