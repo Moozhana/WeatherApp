@@ -103,6 +103,10 @@ h1 {
   position: relative;
   top: -40px;
 }
+img {
+  position: relative;
+  top: -20px;
+}
 .precip {
   font-weight: 100px;
   margin-top: 15px;
