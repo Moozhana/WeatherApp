@@ -18,9 +18,9 @@ function formatDate(timestamp) {
 function showWeather(response) {
   let header1 = document.querySelector("h1");
   header1.innerHTML = response.data.name;
-  let temperature = Math.round(response.data.main.temp);
-  let header2 = document.querySelector(".h2");
-  header2.innerHTML = temperature;
+  tempCelsius = Math.round(response.data.main.temp);
+  let temperature = document.querySelector("#temp");
+  temperature.innerHTML = tempCelsius;
   let humidity = document.querySelector("#humidity");
   humidity.innerHTML = response.data.main.humidity;
   let wind = document.querySelector("#speed");
@@ -67,5 +67,14 @@ function getCurrentLocation(event) {
 
 let current = document.querySelector("#current");
 current.addEventListener("click", getCurrentLocation);
+
+function displayTempFahren() {
+  let temperature = document.querySelector("#temp");
+  temperature.innerHTML = (tempCelsius * 9) / 5 + 32;
+}
+
+let tempCelsius = null;
+let fahrenheit = document.querySelector("#fahren");
+fahrenheit.addEventListener("click", displayTempFahren);
 
 searchCity("Tehran");
