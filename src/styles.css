@@ -83,6 +83,11 @@ h1 {
   color: black;
   cursor: default;
 }
+.active:hover {
+  color: black;
+  cursor: default;
+  text-decoration: none;
+}
 .centi {
   font-size: 15px;
   text-decoration: none;
