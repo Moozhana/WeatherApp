@@ -94,10 +94,6 @@ h1 {
   cursor: pointer;
   margin-bottom: 15px;
 }
-.centi:hover {
-  text-decoration: none;
-  color: blue;
-}
 .fahren {
   font-size: 15px;
   text-decoration: none;
