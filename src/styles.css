@@ -99,10 +99,6 @@ h1 {
   cursor: pointer;
   margin-top: 2px;
 }
-.fahren:hover {
-  text-decoration: none;
-  color: blue;
-}
 .units {
   position: relative;
   top: -26px;
