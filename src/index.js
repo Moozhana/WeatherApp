@@ -81,6 +81,10 @@ function displayTempFahren() {
 function displayTempCels() {
   let temperature = document.querySelector("#temp");
   temperature.innerHTML = tempCelsius;
+  let fahrenheit = document.querySelector("#fahren");
+  let celsius = document.querySelector("#cels");
+  fahrenheit.classList.remove("active");
+  celsius.classList.add("active");
 }
 
 let tempCelsius = null;
