@@ -72,6 +72,10 @@ function displayTempFahren() {
   let temperature = document.querySelector("#temp");
   let tempFahren = (tempCelsius * 9) / 5 + 32;
   temperature.innerHTML = Math.round(tempFahren);
+  let fahrenheit = document.querySelector("#fahren");
+  let celsius = document.querySelector("#cels");
+  fahrenheit.classList.add("active");
+  celsius.classList.remove("active");
 }
 
 function displayTempCels() {
