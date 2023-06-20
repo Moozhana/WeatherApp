@@ -74,8 +74,16 @@ function displayTempFahren() {
   temperature.innerHTML = Math.round(tempFahren);
 }
 
+function displayTempCels() {
+  let temperature = document.querySelector("#temp");
+  temperature.innerHTML = tempCelsius;
+}
+
 let tempCelsius = null;
 let fahrenheit = document.querySelector("#fahren");
 fahrenheit.addEventListener("click", displayTempFahren);
+
+let celsius = document.querySelector("#cels");
+celsius.addEventListener("click", displayTempCels);
 
 searchCity("Tehran");
