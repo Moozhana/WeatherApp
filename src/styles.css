@@ -6,7 +6,7 @@
 }
 
 .weather-app-wrapper {
-  max-width: 600px;
+  max-width: 800px;
   margin: 30px auto;
 }
 
@@ -58,7 +58,7 @@ h1 {
 }
 .fa-cloud-rain {
   color: blue;
-  font-size: 50px;
+  font-size: 20px;
 }
 .fa-sun {
   color: orange;
