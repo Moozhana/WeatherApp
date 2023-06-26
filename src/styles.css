@@ -1,7 +1,7 @@
 .weather-app {
   background-color: rgb(248, 229, 118);
   padding: 20px;
-  border: 1px solid #dadde1;
+  border: 1px solid rgb(248, 229, 118);
   border-radius: 5px;
 }
 

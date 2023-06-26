@@ -41,8 +41,18 @@ function showWeather(response) {
   );
   console.log(response.data);
   let descriptionElement = document.querySelector("#description");
-  description.innerHTML = response.data.weather[0].description;
+  descriptionElement.innerHTML = response.data.weather[0].description;
 }
+
+let prediction = document.querySelector("#forecast");
+prediction.innerHTML = `
+  <div class="row days">
+    <div class="col-2">Fri</div>
+    <div class="col-2">
+      <i class="fa-solid fa-cloud-rain"></i>
+    </div>
+    <div class="col-8">18º 9º</div>
+  </div>`;
 
 function searchCity(city) {
   let units = "metric";
