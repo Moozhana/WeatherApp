@@ -59,7 +59,7 @@ days.forEach(function (day) {
     <div class="col-8">18º  9º</div>
   </div>`;
 });
-prediction = `</div>`;
+prediction = prediction + `</div>`;
 predictionElement.innerHTML = prediction;
 function searchCity(city) {
   let units = "metric";
