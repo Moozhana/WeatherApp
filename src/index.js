@@ -52,11 +52,11 @@ days.forEach(function (day) {
     prediction +
     `
   <div class="row">
-    <div class="col-2">${day}</div>
-    <div class="col-2">
+    <div class="col-1">${day}</div>
+    <div class="col-1">
       <i class="fa-solid fa-cloud-rain"></i>
     </div>
-    <div class="col-8">18º  9º</div>
+    <div class="col-4">18º 9º</div>
   </div>`;
 });
 prediction = prediction + `</div>`;
