@@ -44,11 +44,14 @@ function showWeather(response) {
   descriptionElement.innerHTML = response.data.weather[0].description;
 }
 
-let prediction = document.querySelector("#forecast");
+let predictionElement = document.querySelector("#forecast");
 let days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+let prediction = `<div class=col-4>`;
 days.forEach(function (day) {
-  prediction.innerHTML = `
-  <div class="row days">
+  prediction =
+    prediction +
+    `
+  <div class="row">
     <div class="col-2">${day}</div>
     <div class="col-2">
       <i class="fa-solid fa-cloud-rain"></i>
@@ -56,7 +59,8 @@ days.forEach(function (day) {
     <div class="col-8">18º  9º</div>
   </div>`;
 });
-
+prediction = `</div>`;
+predictionElement.innerHTML = prediction;
 function searchCity(city) {
   let units = "metric";
   let apiKey = "ed55b36e362d8733f7d859247cedeaf2";
