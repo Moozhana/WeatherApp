@@ -46,7 +46,7 @@ function showWeather(response) {
 
 let predictionElement = document.querySelector("#forecast");
 let days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
-let prediction = `<div class=col-4>`;
+let prediction = `<div class="col-4">`;
 days.forEach(function (day) {
   prediction =
     prediction +
