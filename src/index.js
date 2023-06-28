@@ -56,7 +56,7 @@ days.forEach(function (day) {
     <div class="col-1">
       <i class="fa-solid fa-cloud-rain"></i>
     </div>
-    <div class="col-3"><span class="tempMax">18º</span><span class="tempMin"> 9º</span></div>
+    <div class="col-5"><span class="tempMax">18º</span><span class="tempMin"> 9º</span></div>
   </div>`;
 });
 prediction = prediction + `</div>`;
