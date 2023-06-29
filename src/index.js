@@ -24,22 +24,6 @@ function formatDate(timestamp) {
 
 function showForecast(response) {
   let forecast = response.data.daily;
-  let predictionElement = document.querySelector("#forecast");
-  let predictionHTML = `<div class="col-4">`;
-  forecast.forEach(function (forecastDay) {
-    predictionHTML =
-      predictionHTML +
-      `
-  <div class="row">
-    <div class="col-2">${forecastDay.dt}</div>
-    <div class="col-1">
-      <i class="fa-solid fa-cloud-rain"></i>
-    </div>
-    <div class="col-5"><span class="tempMax">${forecastDay.temp.max}</span><span class="tempMin"> ${forecastDay.temp.min}</span></div>
-  </div>`;
-  });
-  predictionHTML = predictionHTML + `</div>`;
-  predictionElement.innerHTML = predictionHTML;
 }
 
 function getForecast(coords) {
