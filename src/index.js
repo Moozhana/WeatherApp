@@ -22,6 +22,8 @@ function formatDate(timestamp) {
   return `${day} ${hours}:${minutes}`;
 }
 
+function showForecast() {}
+
 function showWeather(response) {
   let header1 = document.querySelector("h1");
   header1.innerHTML = response.data.name;
@@ -42,6 +44,12 @@ function showWeather(response) {
   console.log(response.data);
   let descriptionElement = document.querySelector("#description");
   descriptionElement.innerHTML = response.data.weather[0].description;
+
+  let latitude = response.coords.latitude;
+  let longitude = response.coords.longitude;
+  let apiKey = "ed55b36e362d8733f7d859247cedeaf2";
+  let apiUrl = `https://api.openweathermap.org/data/3.0/onecall?lat=${latitude}&lon=${longitude}&appid=${apiKey}`;
+  axios.get(apiUrl).then(showForecast);
 }
 
 let predictionElement = document.querySelector("#forecast");
@@ -56,7 +64,7 @@ days.forEach(function (day) {
     <div class="col-1">
       <i class="fa-solid fa-cloud-rain"></i>
     </div>
-    <div class="col-5"><span class="tempMax">18º<span class="tempMin"> 9º</span></div>
+    <div class="col-5"><span class="tempMax">18º<span class="tempMin"> 9º</span></span></div>
   </div>`;
 });
 prediction = prediction + `</div>`;
