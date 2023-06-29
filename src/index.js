@@ -23,6 +23,7 @@ function formatDate(timestamp) {
 }
 
 function showForecast(response) {
+<<<<<<< HEAD
   let forecast = response.data.daily;
 }
 
@@ -32,6 +33,9 @@ function getForecast(coords) {
   let apiKey = "d7973cb14cb43a087ba202bf734o0cat";
   let apiUrl = `https://api.shecodes.io/weather/v1/forecast?lon=${longitude}&lat=${latitude}&key=${apiKey}&units=metric`;
   axios.get(apiUrl).then(showForecast);
+=======
+  console.log(response.data);
+>>>>>>> parent of af10337 (Revert "Update index.js")
 }
 
 function showWeather(response) {
