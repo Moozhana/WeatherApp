@@ -23,7 +23,7 @@ function formatDate(timestamp) {
 }
 
 function showForecast(response) {
-  console.log(response.data);
+  console.log(response.data.daily);
 }
 
 function getForecast(coords) {
