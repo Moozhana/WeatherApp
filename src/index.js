@@ -24,23 +24,6 @@ function formatDate(timestamp) {
 
 function showForecast(response) {
   console.log(response.data);
-  let predictionElement = document.querySelector("#forecast");
-  let days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
-  let prediction = `<div class="col-4">`;
-  days.forEach(function (day) {
-    prediction =
-      prediction +
-      `
-  <div class="row">
-    <div class="col-2">${day}</div>
-    <div class="col-1">
-      <i class="fa-solid fa-cloud-rain"></i>
-    </div>
-    <div class="col-5"><span class="tempMax">18º</span><span class="tempMin"> 9º</span></div>
-  </div>`;
-  });
-  prediction = prediction + `</div>`;
-  predictionElement.innerHTML = prediction;
 }
 
 function showWeather(response) {
