@@ -22,7 +22,26 @@ function formatDate(timestamp) {
   return `${day} ${hours}:${minutes}`;
 }
 
-function showForecast() {}
+function showForecast(response) {
+  console.log(response.data);
+  let predictionElement = document.querySelector("#forecast");
+  let days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+  let prediction = `<div class="col-4">`;
+  days.forEach(function (day) {
+    prediction =
+      prediction +
+      `
+  <div class="row">
+    <div class="col-2">${day}</div>
+    <div class="col-1">
+      <i class="fa-solid fa-cloud-rain"></i>
+    </div>
+    <div class="col-5"><span class="tempMax">18º</span><span class="tempMin"> 9º</span></div>
+  </div>`;
+  });
+  prediction = prediction + `</div>`;
+  predictionElement.innerHTML = prediction;
+}
 
 function showWeather(response) {
   let header1 = document.querySelector("h1");
@@ -41,34 +60,16 @@ function showWeather(response) {
     "src",
     `https://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
   );
-  console.log(response.data);
   let descriptionElement = document.querySelector("#description");
   descriptionElement.innerHTML = response.data.weather[0].description;
 
-  let latitude = response.coords.latitude;
-  let longitude = response.coords.longitude;
+  let latitude = response.data.coords.lat;
+  let longitude = response.data.coords.lon;
   let apiKey = "ed55b36e362d8733f7d859247cedeaf2";
   let apiUrl = `https://api.openweathermap.org/data/3.0/onecall?lat=${latitude}&lon=${longitude}&appid=${apiKey}`;
   axios.get(apiUrl).then(showForecast);
 }
 
-let predictionElement = document.querySelector("#forecast");
-let days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
-let prediction = `<div class="col-4">`;
-days.forEach(function (day) {
-  prediction =
-    prediction +
-    `
-  <div class="row">
-    <div class="col-2">${day}</div>
-    <div class="col-1">
-      <i class="fa-solid fa-cloud-rain"></i>
-    </div>
-    <div class="col-5"><span class="tempMax">18º</span><span class="tempMin"> 9º</span></div>
-  </div>`;
-});
-prediction = prediction + `</div>`;
-predictionElement.innerHTML = prediction;
 function searchCity(city) {
   let units = "metric";
   let apiKey = "ed55b36e362d8733f7d859247cedeaf2";
