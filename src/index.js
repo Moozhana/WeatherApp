@@ -22,18 +22,6 @@ function formatDate(timestamp) {
   return `${day} ${hours}:${minutes}`;
 }
 
-function showForecast(response) {
-  let forecast = response.data.daily;
-}
-
-function getForecast(coords) {
-  let latitude = coords.lat;
-  let longitude = coords.lon;
-  let apiKey = "d7973cb14cb43a087ba202bf734o0cat";
-  let apiUrl = `https://api.shecodes.io/weather/v1/forecast?lon=${longitude}&lat=${latitude}&key=${apiKey}&units=metric`;
-  axios.get(apiUrl).then(showForecast);
-}
-
 function showWeather(response) {
   let header1 = document.querySelector("h1");
   header1.innerHTML = response.data.name;
