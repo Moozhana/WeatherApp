@@ -30,7 +30,7 @@ function getForecast(coords) {
   let latitude = coords.lat;
   let longitude = coords.lon;
   let apiKey = "d7973cb14cb43a087ba202bf734o0cat";
-  let apiUrl = `https://api.openweathermap.org/data/3.0/onecall?lat=${latitude}&lon=${longitude}&appid=${apiKey}&units=metric`;
+  let apiUrl = `https://api.shecodes.io/weather/v1/forecast?lon=${longitude}&lat=${latitude}&key=${apiKey}&units=metric`;
   axios.get(apiUrl).then(showForecast);
 }
 
