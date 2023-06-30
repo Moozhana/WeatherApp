@@ -143,3 +143,11 @@ a:hover {
   color: blue;
   text-decoration: underline;
 }
+.weather-forecast-temperature-min {
+  opacity: 0.7;
+}
+
+.weather-forecast-date {
+  font-size: 16px;
+  opacity: 0.5;
+}
