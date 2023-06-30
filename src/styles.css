@@ -129,7 +129,7 @@ img {
 }
 .weather-forecast {
   text-align: center;
-  margin: 40px 0;
+  margin: 40px 10px;
 }
 .gitLink {
   font-size: 14px;
@@ -153,7 +153,6 @@ a:hover {
 .weather-forecast-date {
   font-size: 16px;
   opacity: 0.5;
-  margin-top: 15px;
 }
 .weather-forecast-date {
   margin-bottom: 20px;
