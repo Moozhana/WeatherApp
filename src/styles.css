@@ -129,7 +129,7 @@ img {
 }
 .weather-forecast {
   text-align: center;
-  margin: 40px 10px;
+  margin: 40px auto;
 }
 .gitLink {
   font-size: 14px;
