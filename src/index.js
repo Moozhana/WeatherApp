@@ -153,4 +153,4 @@ fahrenheit.addEventListener("click", displayTempFahren);
 let celsius = document.querySelector("#cels");
 celsius.addEventListener("click", displayTempCels);
 
-searchCity("Tehran");
+searchCity("Rasht");

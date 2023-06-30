@@ -143,6 +143,9 @@ a:hover {
   color: blue;
   text-decoration: underline;
 }
+.weather-forecast-temperature {
+  margin-top: 10px;
+}
 .weather-forecast-temperature-min {
   opacity: 0.5;
 }
@@ -152,5 +155,5 @@ a:hover {
   opacity: 0.5;
 }
 .weather-forecast-date {
-  margin-bottom: 5px;
+  margin-bottom: 10px;
 }
