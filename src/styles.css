@@ -9,7 +9,9 @@
   max-width: 700px;
   margin: 30px auto;
 }
-
+.first {
+  margin-top: 40px;
+}
 .mb-3 {
   display: block;
   margin-top: 2px;
@@ -40,33 +42,6 @@ h1 {
 .icon {
   position: relative;
   top: 40px;
-}
-.Fri {
-  margin-bottom: 40px;
-}
-.Sat {
-  margin-bottom: 40px;
-}
-.Sun {
-  margin-bottom: 40px;
-}
-.Mon {
-  margin-bottom: 40px;
-}
-.Tue {
-  margin-bottom: 80px;
-}
-.fa-cloud-rain {
-  color: blue;
-  font-size: 20px;
-}
-.fa-sun {
-  color: orange;
-  font-size: 50px;
-}
-.fa-cloud {
-  color: blue;
-  font-size: 40px;
 }
 .time {
   font-weight: bold;
@@ -148,6 +123,7 @@ a:hover {
 }
 .weather-forecast-temperature-min {
   opacity: 0.5;
+  margin-left: 3px;
 }
 
 .weather-forecast-date {
