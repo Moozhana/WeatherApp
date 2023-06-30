@@ -59,6 +59,7 @@ let search = document.querySelector("#search-form");
 search.addEventListener("submit", handleSubmit);
 
 function searchLocation(position) {
+  console.log(position);
   let latitude = position.coords.latitude;
   let longitude = position.coords.longitude;
   let apiKey = "cb53265821867e939bc008ce978118f1";
